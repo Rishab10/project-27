@@ -19,7 +19,7 @@ function setup() {
 	world = engine.world;
 
 	roof = new roof(350,100,300,30);
-	world.add(world.roof);
+	World.add(world.roof);
 	bob1 = new bob(250,300);
 	bob2 = new bob(300,300);
 	bob3 = new bob(350,300);
@@ -29,19 +29,19 @@ function setup() {
 	
 	
 	rope1=new rope(bob1.body,roofObject.body,-100, 0)
-	world.add(world,rope1);
+	World.add(world,rope1);
 
 	rope2=new rope(bob2.body,roofObject.body,-50, 0)
-	world.add(world,rope2);
+	World.add(world,rope2);
 
 	rope3=new rope(bob1.body,roofObject.body,0, 0)
-	world.add(world,rope3);
+	World.add(world,rope3);
 
 	rope4=new rope(bob1.body,roofObject.body,+50, 0)
-	world.add(world,rope4);
+	World.add(world,rope4);
 
 	rope5=new rope(bob1.body,roofObject.body,+100, 0)
-	world.add(world,rope5);
+	World.add(world,rope5);
 	
 	
 	Engine.run(engine);
